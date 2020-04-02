@@ -1,0 +1,18 @@
+datasource db {
+    provider = "postgresql"
+    url      = "postgresql://postgres:docker@192.168.99.100:5432/pg-docker?schema=public"
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+model Game {
+    id        String   @default(cuid()) @id
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+    name      String
+    system     String
+    date_completed      String
+    rating     Number
+}
