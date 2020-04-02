@@ -1,5 +1,5 @@
-# Dealership Backend
-### Project By Coby Yates
+# Games I've Played
+### A GraphQL Project By Tanner Thelin
 
 
 ### Prisma as your data modeling tool
