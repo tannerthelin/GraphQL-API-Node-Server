@@ -19,7 +19,7 @@ declare global {
 }
 
 export interface NexusGenInputs {
-  VehicleWhereUniqueInput: { // input type
+  PersonWhereUniqueInput: { // input type
     id?: string | null; // String
   }
 }
@@ -29,8 +29,8 @@ export interface NexusGenEnums {
 
 export interface NexusGenRootTypes {
   Mutation: {};
+  Person: prisma.Person;
   Query: {};
-  Vehicle: prisma.Vehicle;
   String: string;
   Int: number;
   Float: number;
@@ -40,73 +40,49 @@ export interface NexusGenRootTypes {
 }
 
 export interface NexusGenAllTypes extends NexusGenRootTypes {
-  VehicleWhereUniqueInput: NexusGenInputs['VehicleWhereUniqueInput'];
+  PersonWhereUniqueInput: NexusGenInputs['PersonWhereUniqueInput'];
 }
 
 export interface NexusGenFieldTypes {
   Mutation: { // field return type
-    createVehicle: NexusGenRootTypes['Vehicle']; // Vehicle!
-    deleteOneVehicle: NexusGenRootTypes['Vehicle'] | null; // Vehicle
-    updateVehicle: NexusGenRootTypes['Vehicle']; // Vehicle!
+    createPerson: NexusGenRootTypes['Person']; // Person!
+    deleteOnePerson: NexusGenRootTypes['Person'] | null; // Person
+    updatePerson: NexusGenRootTypes['Person']; // Person!
+  }
+  Person: { // field return type
+    age: number; // Int!
+    id: string; // String!
+    name: string; // String!
+    updatedAt: any; // DateTime!
   }
   Query: { // field return type
-    Vehicle: NexusGenRootTypes['Vehicle'] | null; // Vehicle
-    Vehicles: NexusGenRootTypes['Vehicle'][]; // [Vehicle!]!
-  }
-  Vehicle: { // field return type
-    createdAt: any; // DateTime!
-    engine: string; // String!
-    id: string; // String!
-    make: string; // String!
-    model: string; // String!
-    power: string; // String!
-    price: string; // String!
-    sixty: string; // String!
-    topSpeed: string; // String!
-    torque: string; // String!
-    updatedAt: any; // DateTime!
-    weight: string; // String!
-    year: string; // String!
+    filterPeople: NexusGenRootTypes['Person'][]; // [Person!]!
+    People: NexusGenRootTypes['Person'][]; // [Person!]!
+    Person: NexusGenRootTypes['Person'] | null; // Person
   }
 }
 
 export interface NexusGenArgTypes {
   Mutation: {
-    createVehicle: { // args
-      engine?: string | null; // String
-      make: string; // String!
-      model: string; // String!
-      power?: string | null; // String
-      price?: string | null; // String
-      sixty?: string | null; // String
-      topSpeed?: string | null; // String
-      torque?: string | null; // String
-      weight?: string | null; // String
-      year: string; // String!
+    createPerson: { // args
+      age: number; // Int!
+      name: string; // String!
     }
-    deleteOneVehicle: { // args
-      where: NexusGenInputs['VehicleWhereUniqueInput']; // VehicleWhereUniqueInput!
+    deleteOnePerson: { // args
+      where: NexusGenInputs['PersonWhereUniqueInput']; // PersonWhereUniqueInput!
     }
-    updateVehicle: { // args
-      engine?: string | null; // String
+    updatePerson: { // args
+      age?: number | null; // Int
       id?: string | null; // ID
-      make?: string | null; // String
-      model?: string | null; // String
-      power?: string | null; // String
-      price?: string | null; // String
-      sixty?: string | null; // String
-      topSpeed?: string | null; // String
-      torque?: string | null; // String
-      weight?: string | null; // String
-      year?: string | null; // String
+      name?: string | null; // String
     }
   }
   Query: {
-    Vehicle: { // args
-      id?: string | null; // ID
+    filterPeople: { // args
+      searchstring?: string | null; // String
     }
-    Vehicles: { // args
-      searchString?: string | null; // String
+    Person: { // args
+      id?: string | null; // ID
     }
   }
 }
@@ -116,9 +92,9 @@ export interface NexusGenAbstractResolveReturnTypes {
 
 export interface NexusGenInheritedFields {}
 
-export type NexusGenObjectNames = "Mutation" | "Query" | "Vehicle";
+export type NexusGenObjectNames = "Mutation" | "Person" | "Query";
 
-export type NexusGenInputNames = "VehicleWhereUniqueInput";
+export type NexusGenInputNames = "PersonWhereUniqueInput";
 
 export type NexusGenEnumNames = never;
 

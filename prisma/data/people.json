@@ -1,0 +1,106 @@
+[
+    {
+        "name": "Test person to edit",
+        "age": 60
+    },
+    {
+        "name": "Test person to delete",
+        "age": 60
+    },
+    {
+        "name": "Yoda",
+        "age": 6000
+    },
+    {
+        "name": "Luke Skywalker",
+        "age": 18
+    },
+    {
+        "name": "Leia Organa",
+        "age": 18
+    },
+    {
+        "name": "C3P0",
+        "age": 400
+    },
+    {
+        "name": "Darth Vader",
+        "age": 80
+    },
+    {
+        "name": "BB8",
+        "age": 3000
+    },
+    {
+        "name": "Owen Lars",
+        "age": 60
+    },
+    {
+        "name": "Obi Wan Kenobi",
+        "age": 36
+    },
+    {
+        "name": "Biggs Darklighter",
+        "age": 430
+    },
+    {
+        "name": "Jabba the Hutt",
+        "age": 560
+    },
+    {
+        "name": "Anakin",
+        "age": 22
+    },
+    {
+        "name": "Padme",
+        "age": 27
+    },
+    {
+        "name": "Palpatine",
+        "age": 340
+    },
+    {
+        "name": "Snoke",
+        "age": 2000
+    },
+    {
+        "name": "Rey",
+        "age": 17
+    },
+    {
+        "name": "Finn",
+        "age": 21
+    },
+    {
+        "name": "Poe",
+        "age": 28
+    },
+    {
+        "name": "Lando Calrissan",
+        "age": 34
+    },
+    {
+        "name": "Darth Maul",
+        "age": 87
+    },
+    {
+        "name": "General Grievous",
+        "age": 4000
+    },
+    {
+        "name": "Kylo Ren",
+        "age": 29
+    },
+    {
+        "name": "Han Solo",
+        "age": 35
+    },
+    {
+        "name": "Chewbacca",
+        "age": 700
+    },
+    {
+        "name": "Boba Fett",
+        "age": 56
+    }
+]

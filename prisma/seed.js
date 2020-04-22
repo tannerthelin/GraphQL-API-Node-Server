@@ -1,39 +1,59 @@
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from '@prisma/client'
 import fs from 'fs'
 
-const prismaClient = new PrismaClient();
+const prismaClient = new PrismaClient()
 
-const all_games = fs.readFileSync('prisma/games.json')
+const people = fs.readFileSync('prisma/data/people.json')
 
-function loadGames() {
-  const game = JSON.parse(all_games)
-  const allGames = game.game
-  return allGames.map(game => {
+function loadPeople() {
+  const list = JSON.parse(people)
+  
+ return list.map(person => {
     return {
       data: {
-        name: game.name,
-        system: game.system,
-        dateCompleted: game.date_completed,
-        rating: game.rating
-      },
+        name: person.name,
+        age: person.age
+      }
     }
   })
 }
 
 async function main() {
   try {
-    const allGames = loadGames()
-    for (let game of allGames) {
-      await prismaClient.game.create(game)
-      .catch(err => console.log(`Error trying to add: ${err} game ${vhcls}`))
-    }
-  } catch (err) {
-    console.log(err);
+    const allPeople = loadPeople()
+    for(let person of allPeople) {
+      await prismaClient.person.create(person)
+      .catch(err => console.error(`Error trying to generate people `))
+    } 
+  } catch(err) {
+    console.log(err)
   }
 }
 
+
+/* async function createPerson() {
+  try {
+    await prismaClient.person.create({
+      data: {
+        name: 'Test Person',
+        age: 100,
+      },
+    })
+  } catch (err) {
+    console.log(err)
+  }
+}
+
+async function main() {
+  try {
+    await createPerson()
+  } catch(err) {
+    console.log(err)
+  }
+} */
+
 main()
-  .catch(e => console.error(e))
-  .finally(async () => {
-    await prismaClient.disconnect();
-  });
+.catch(e => console.error(e))
+.finally(async () => {
+  await prismaClient.disconnect()
+})
