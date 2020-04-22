@@ -35,10 +35,10 @@ npm run start
 * Then navigate to [http://localhost:5555](http://localhost:5555) in your broswer to view Prisma Studio.
 
 ### Prisma as your data modeling tool
-* [See Prisma Code](https://github.com/juliannehalversen/dgm4790-graphql-server/tree/master/prisma)
+* [See Prisma Code](https://github.com/tannerthelin/GraphQL-API-Node-Server/tree/master/prisma)
 
 ### Docker-based PostgreSQL, MySQL, or MongoDB as your data store
-* [See Postgres in scripts](https://github.com/juliannehalversen/dgm4790-graphql-server/blob/master/package.json)
+* [See Postgres in scripts](https://github.com/tannerthelin/GraphQL-API-Node-Server/blob/master/package.json)
 
 ### At least 3 Query resolvers to get data from your server
 #### * The id's in all queries and mutations are provided for a premade person for easy testing.  
@@ -122,8 +122,8 @@ mutation deleteOnePerson {
 ```
 
 ### Your datastore will contain at least 25 items
-* You can see the number of items in [Primsa Studio](http://localhost:5555/) or the [Seed File](https://github.com/juliannehalversen/dgm4790-graphql-server/blob/master/prisma/seed.js), and the data being seeded in the [People.json](https://github.com/juliannehalversen/dgm4790-graphql-server/blob/master/prisma/data/people.json)
+* You can see the number of items in [Primsa Studio](http://localhost:5555/) or the [Seed File](https://github.com/tannerthelin/GraphQL-API-Node-Server/blob/master/prisma/seed.js), and the data being seeded in the [People.json](https://github.com/tannerthelin/GraphQL-API-Node-Server/blob/master/prisma/data/people.json)
 
 ### Your app will be deployable locally using Docker and will have seed data entered into the datastore.
-* This can be seen in the npm scripts above and in the [package.json](https://github.com/juliannehalversen/dgm4790-graphql-server/blob/master/package.json)
+* This can be seen in the npm scripts above and in the [package.json](https://github.com/tannerthelin/GraphQL-API-Node-Server/blob/master/package.json)
 

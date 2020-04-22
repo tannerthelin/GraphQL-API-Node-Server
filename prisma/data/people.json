@@ -1,106 +1,106 @@
 [
     {
-        "name": "Test person to edit",
+        "name": "Beck Bennett",
         "age": 60
     },
     {
-        "name": "Test person to delete",
+        "name": "Aidy Bryant",
         "age": 60
     },
     {
-        "name": "Yoda",
+        "name": "Michael Che",
         "age": 6000
     },
     {
-        "name": "Luke Skywalker",
+        "name": "Pete Davidson",
         "age": 18
     },
     {
-        "name": "Leia Organa",
+        "name": "Mikey Day",
         "age": 18
     },
     {
-        "name": "C3P0",
+        "name": "Heidi Gardner",
         "age": 400
     },
     {
-        "name": "Darth Vader",
+        "name": "Colin Jost",
         "age": 80
     },
     {
-        "name": "BB8",
+        "name": "Kate McKinnon",
         "age": 3000
     },
     {
-        "name": "Owen Lars",
+        "name": "Alex Moffat",
         "age": 60
     },
     {
-        "name": "Obi Wan Kenobi",
+        "name": "Kyle Mooney",
         "age": 36
     },
     {
-        "name": "Biggs Darklighter",
+        "name": "Chris Redd",
         "age": 430
     },
     {
-        "name": "Jabba the Hutt",
+        "name": "Cecily Strong",
         "age": 560
     },
     {
-        "name": "Anakin",
+        "name": "Keenan Thompson",
         "age": 22
     },
     {
-        "name": "Padme",
+        "name": "Melissa Villseñor",
         "age": 27
     },
     {
-        "name": "Palpatine",
+        "name": "Will Ferrell",
         "age": 340
     },
     {
-        "name": "Snoke",
+        "name": "Will Forte",
         "age": 2000
     },
     {
-        "name": "Rey",
+        "name": "Andy Samberg",
         "age": 17
     },
     {
-        "name": "Finn",
+        "name": "Chevy Chase",
         "age": 21
     },
     {
-        "name": "Poe",
+        "name": "Tina Fey",
         "age": 28
     },
     {
-        "name": "Lando Calrissan",
+        "name": "Amy Poehler",
         "age": 34
     },
     {
-        "name": "Darth Maul",
+        "name": "Lorne Michaels",
         "age": 87
     },
     {
-        "name": "General Grievous",
+        "name": "John Belushi",
         "age": 4000
     },
     {
-        "name": "Kylo Ren",
+        "name": "Eddie Murphy",
         "age": 29
     },
     {
-        "name": "Han Solo",
+        "name": "Kristen Wiig",
         "age": 35
     },
     {
-        "name": "Chewbacca",
+        "name": "Dan Aykroyd",
         "age": 700
     },
     {
-        "name": "Boba Fett",
+        "name": "Bill Murray",
         "age": 56
     }
 ]
