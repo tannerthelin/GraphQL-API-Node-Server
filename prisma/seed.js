@@ -12,7 +12,8 @@ function loadPeople() {
     return {
       data: {
         name: person.name,
-        age: person.age
+        age: person.age,
+        years_on_show: person.years_on_show
       }
     }
   })

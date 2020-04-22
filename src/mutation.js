@@ -11,11 +11,12 @@ export const Mutation = mutationType({
                 name: stringArg({ nullable: false }),
                 age: intArg({ nullable: false })
             },
-            resolve: (parent, { name, age }, ctx) => {
+            resolve: (parent, { name, age, years_on_show }, ctx) => {
                 return ctx.prisma.person.create({
                     data: {
                         name,
                         age,
+                        years_on_show
                     }
                 })
             }
@@ -26,16 +27,18 @@ export const Mutation = mutationType({
             args: { 
                 id: idArg(),
                 name: stringArg(),
-                age: intArg()
+                age: intArg(),
+                years_on_show: intArg()
             },
-            resolve: (parent, { id, name, age}, ctx) => {
+            resolve: (parent, { id, name, age, years_on_show}, ctx) => {
                 return ctx.prisma.person.update({
                     where: {
                         id
                     },
                     data: {
                         name,
-                        age
+                        age,
+                        years_on_show
                     }
                 })
             }

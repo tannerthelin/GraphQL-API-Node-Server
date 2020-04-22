@@ -13,4 +13,5 @@ model Person {
   updatedAt DateTime @updatedAt
   name  String 
   age   Int
+  years_on_show  String
 }

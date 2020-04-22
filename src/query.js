@@ -32,7 +32,8 @@ export const Query = queryType({
                     where: {
                         OR: [
                             { name: {contains: searchstring }},
-                            { age: {contains: searchstring }}
+                            { age: {contains: searchstring }},
+                            { years_on_show: {contains: searchstring }}
                         ],
                     },
                 })
